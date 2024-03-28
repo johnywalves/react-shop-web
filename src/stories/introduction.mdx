@@ -1,7 +1,12 @@
-import { Meta } from "@storybook/blocks";
+import { Meta } from "@storybook/blocks"
+import { ThemeProvider } from 'styled-components'
+
+import theme from '../styles/theme'
 import GlobalStyles from '../styles/global'
 
-<GlobalStyles />
+<ThemeProvider theme={theme}>
+    <GlobalStyles />
+</ThemeProvider>
 
 <Meta title="Introdução" />
 

@@ -14,7 +14,6 @@
     "lint": "eslint src --max-warnings=0",
     "lint:fix": "eslint src --max-warnings=0 --fix",
     "test": "jest --maxWorkers=50%",
-    "test:bail": "jest --maxWorkers=50% --findRelatedTests --bail",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
     "generate": "npx plop --plopfile ./.generators/plopfile.js"

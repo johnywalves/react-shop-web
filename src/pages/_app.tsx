@@ -3,7 +3,9 @@ import Head from 'next/head'
 import Router from 'next/router'
 
 import NProgress from 'nprogress'
+import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
+import theme from 'styles/theme'
 
 import manifest from '../../public/manifest.json'
 import '../styles/nprogress.css'
@@ -17,7 +19,7 @@ Router.events.on('routeChangeError', () => NProgress.done())
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +55,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 
