@@ -67,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: ${theme.colors.mainBg};
+        gap: ${theme.grid.gutter};
       }
 
       .docs-story {

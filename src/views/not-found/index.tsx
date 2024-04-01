@@ -1,5 +1,3 @@
-import Button from 'components/button'
-
 import { TitleNotFound, SubtitleNotFound, HomeNotFound } from './styles'
 
 const NotFound = () => (
@@ -9,9 +7,7 @@ const NotFound = () => (
       Volte para página anterior ou clique no botão para ir para a página
       principal
     </SubtitleNotFound>
-    <HomeNotFound href="/" passHref>
-      <Button>Ir para página inicial</Button>
-    </HomeNotFound>
+    <HomeNotFound href="/">Ir para página inicial</HomeNotFound>
   </>
 )
 
