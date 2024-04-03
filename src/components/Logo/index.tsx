@@ -11,7 +11,7 @@ const Logo = ({
   $size = 'normal',
   $hideOnMobile = false
 }: LogoProps) => (
-  <WrapperLogo $color={$color} $size={$size} $hideOnMobile={!!$hideOnMobile}>
+  <WrapperLogo $color={$color} $size={$size} $hideOnMobile={$hideOnMobile}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

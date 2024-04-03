@@ -11,6 +11,6 @@ const meta: Meta<typeof Logo> = {
 
 type Story = StoryObj<typeof Logo>
 
-export const Primary: Story = {}
+export const Default: Story = {}
 
 export default meta
